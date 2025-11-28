@@ -354,7 +354,7 @@
       padding: 16px 12px;
       text-align: center;
       font-weight: 700;
-      font-size: 13px;
+      font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       border: none;
@@ -372,7 +372,7 @@
     .excel-table td {
       padding: 14px 12px;
       border: none;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 500;
       text-align: center;
       background: white;
@@ -382,11 +382,23 @@
 
     .excel-table td:first-child {
       font-weight: 700;
-      text-align: left;
+      text-align: center;
       background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
       color: #1e40af;
       font-size: 16px;
-      padding-left: 20px;
+      padding-left: 0;
+    }
+
+    /* Ensure the first column (grades) across all tables is centered */
+    .report-container table td:first-child,
+    .report-container table th:first-child {
+      text-align: center !important;
+      padding-left: 0 !important;
+    }
+
+    /* Base font-size for all tables for improved readability */
+    .report-container table {
+      font-size: 16px;
     }
 
     .excel-table tbody tr {
@@ -1327,77 +1339,7 @@
          </div>
      </div>
 
-     <!-- Science Row -->
-     <div class="subject-row-container">
-         <div class="subject-heading science">Science Focus Area</div>
-         <div class="teacher-scroll-row">
-             <!-- G1 -->
-             <div class="teacher-card">
-               <div class="teacher-card-header"><div class="grade-label">Grade 1</div><div class="focus-badge">Discovery</div></div>
-               <div class="focus-areas">
-                <div class="focus-title">Remediation Focus</div>
-                <ul class="focus-list">
-                 <li>Five senses exploration</li>
-                 <li>Seasons and weather</li>
-                 <li>Living vs. non-living things</li>
-                </ul>
-               </div>
-               <div class="reflection-prompt">"How to encourage observation skills?"</div>
-             </div>
-             <!-- G2 -->
-             <div class="teacher-card">
-               <div class="teacher-card-header"><div class="grade-label">Grade 2</div><div class="focus-badge">Exploration</div></div>
-               <div class="focus-areas">
-                <div class="focus-title">Remediation Focus</div>
-                <ul class="focus-list">
-                 <li>Plant life cycles</li>
-                 <li>Animal habitats</li>
-                 <li>Properties of matter basics</li>
-                </ul>
-               </div>
-               <div class="reflection-prompt">"Are they asking 'why' questions?"</div>
-             </div>
-             <!-- G3 -->
-             <div class="teacher-card">
-               <div class="teacher-card-header"><div class="grade-label">Grade 3</div><div class="focus-badge">Inquiry</div></div>
-               <div class="focus-areas">
-                <div class="focus-title">Remediation Focus</div>
-                <ul class="focus-list">
-                 <li>Forces and motion</li>
-                 <li>Water cycle</li>
-                 <li>Simple machines</li>
-                </ul>
-               </div>
-               <div class="reflection-prompt">"Can they predict outcomes of simple tests?"</div>
-             </div>
-             <!-- G4 -->
-             <div class="teacher-card">
-               <div class="teacher-card-header"><div class="grade-label">Grade 4</div><div class="focus-badge">Analysis</div></div>
-               <div class="focus-areas">
-                <div class="focus-title">Remediation Focus</div>
-                <ul class="focus-list">
-                 <li>Energy forms (light, sound)</li>
-                 <li>Ecosystems and food chains</li>
-                 <li>Earth's surface changes</li>
-                </ul>
-               </div>
-               <div class="reflection-prompt">"How well do they understand cause and effect?"</div>
-             </div>
-             <!-- G5 -->
-             <div class="teacher-card">
-               <div class="teacher-card-header"><div class="grade-label">Grade 5</div><div class="focus-badge">Synthesis</div></div>
-               <div class="focus-areas">
-                <div class="focus-title">Remediation Focus</div>
-                <ul class="focus-list">
-                 <li>Human body systems</li>
-                 <li>Solar system structure</li>
-                 <li>Matter and chemical changes</li>
-                </ul>
-               </div>
-               <div class="reflection-prompt">"Are they connecting concepts across units?"</div>
-             </div>
-         </div>
-     </div>
+     
 
     </div>
    </div>
