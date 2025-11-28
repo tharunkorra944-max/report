@@ -1,7 +1,7 @@
 {
   "buildCommand": "echo 'Static site - no build needed'",
   "cleanUrls": true,
-  "public": ".",
+  "public": true,
   "rewrites": [
     {
       "source": "/",
