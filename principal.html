@@ -850,7 +850,7 @@
      <div class="segmentation-grid">
       <div class="segment-card high" onclick="showSegmentDetails('high')">
        <div class="segment-icon">🌟</div>
-       <div class="segment-label">High Performers</div>
+       <div class="segment-label">At Grade Level</div>
        <div class="segment-criteria">(At grade Level)</div>
        <div class="segment-description"><strong>35% of students</strong><br></div>
        <div class="segment-note">Provide enrichment activities</div>
@@ -858,14 +858,14 @@
       <div class="segment-card track" onclick="showSegmentDetails('track')">
        <div class="segment-icon">📊</div>
        <div class="segment-label">On Track</div>
-       <div class="segment-criteria">(1-2 years below)</div>
+       <div class="segment-criteria">(Upto 2 Years Below)</div>
        <div class="segment-description"><strong>40% of students</strong><br></div>
        <div class="segment-note">Maintain current support</div>
       </div>
       <div class="segment-card support" onclick="showSegmentDetails('support')">
        <div class="segment-icon">🆘</div>
        <div class="segment-label">Needs Support</div>
-       <div class="segment-criteria">(3-4 years below)</div>
+       <div class="segment-criteria">(Upto 4 Years Below)</div>
        <div class="segment-description"><strong>25% of students</strong><br></div>
        <div class="segment-note">Requires targeted intervention</div>
       </div>
@@ -910,36 +910,7 @@
         </div>
        </div>
 
-       <div class="chart-container vertical-chart">
-        <div class="chart-title">Science – Gap to Grade Level</div>
-        <div class="vertical-bar-chart">
-         <div class="bar-column">
-          <div class="bar-value-label"><span class="bar-percentage text-yellow-600">70%</span><span class="bar-count">(1400)</span></div>
-          <div class="vertical-bar-wrapper"><div class="vertical-bar science-bar" style="height: 100%"></div></div>
-          <div class="bar-category-label">At Grade Level</div>
-         </div>
-         <div class="bar-column">
-          <div class="bar-value-label"><span class="bar-percentage text-yellow-600">10%</span><span class="bar-count">(200)</span></div>
-          <div class="vertical-bar-wrapper"><div class="vertical-bar science-bar" style="height: 14.3%"></div></div>
-          <div class="bar-category-label">1 Year Below</div>
-         </div>
-         <div class="bar-column">
-          <div class="bar-value-label"><span class="bar-percentage text-yellow-600">8%</span><span class="bar-count">(160)</span></div>
-          <div class="vertical-bar-wrapper"><div class="vertical-bar science-bar" style="height: 11.4%"></div></div>
-          <div class="bar-category-label">2 Years Below</div>
-         </div>
-         <div class="bar-column">
-          <div class="bar-value-label"><span class="bar-percentage text-yellow-600">5%</span><span class="bar-count">(100)</span></div>
-          <div class="vertical-bar-wrapper"><div class="vertical-bar science-bar" style="height: 7.1%"></div></div>
-          <div class="bar-category-label">3 Years Below</div>
-         </div>
-         <div class="bar-column">
-          <div class="bar-value-label"><span class="bar-percentage text-yellow-600">3%</span><span class="bar-count">(60)</span></div>
-          <div class="vertical-bar-wrapper"><div class="vertical-bar science-bar" style="height: 4.3%"></div></div>
-          <div class="bar-category-label">4 Years Below</div>
-         </div>
-        </div>
-       </div>
+       
       </div>
 
       <div class="chart-column-stack">
@@ -974,64 +945,7 @@
         </div>
        </div>
 
-       <div class="chart-container vertical-chart">
-        <div class="chart-title">✅ Level Distribution Logic</div>
-        <div style="padding: 20px; height: 330px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <p class="text-slate-500 text-sm mb-4 leading-relaxed">
-              Checks how high the student answers questions from <strong>lower grades</strong>.
-            </p>
-            <div class="mb-4 bg-blue-50 p-3 rounded-lg border border-blue-100">
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-blue-600 text-base">📘</span>
-                <span class="font-bold uppercase tracking-wide text-xs text-blue-800">RULE</span>
-              </div>
-              <p class="text-sm text-slate-700 italic leading-snug">
-                Performance level = <span class="text-blue-700 font-semibold">highest grade-level questions passed</span>.
-              </p>
-            </div>
-            <p class="text-sm mb-3 text-slate-600 font-medium">Example: <strong>5th-grade student</strong></p>
-          </div>
-          <div class="w-full">
-            <table class="w-full text-xs text-left border-collapse">
-              <thead>
-                <tr class="bg-slate-50 border-b border-slate-200 text-slate-500 uppercase text-[10px]">
-                  <th class="py-1.5 px-1.5 font-bold text-left">Questions</th>
-                  <th class="py-1.5 px-1.5 font-bold text-center">Level</th>
-                  <th class="py-1.5 px-1.5 font-bold text-left">Meaning</th>
-                </tr>
-              </thead>
-              <tbody class="text-slate-600">
-                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                  <td class="py-1 px-1.5 font-medium">Grade 4</td>
-                  <td class="py-1 px-1.5 text-center font-bold text-emerald-600">L5</td>
-                  <td class="py-1 px-1.5 text-emerald-700 text-xs">At Level</td>
-                </tr>
-                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                  <td class="py-1 px-1.5">Grade 3</td>
-                  <td class="py-1 px-1.5 text-center font-bold text-slate-700">L4</td>
-                  <td class="py-1 px-1.5 text-amber-600 text-xs">1 Yr Below</td>
-                </tr>
-                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                  <td class="py-1 px-1.5">Grade 2</td>
-                  <td class="py-1 px-1.5 text-center font-bold text-slate-700">L3</td>
-                  <td class="py-1 px-1.5 text-amber-600 text-xs">2 Yr Below</td>
-                </tr>
-                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                  <td class="py-1 px-1.5">Grade 1</td>
-                  <td class="py-1 px-1.5 text-center font-bold text-slate-700">L2</td>
-                  <td class="py-1 px-1.5 text-orange-600 text-xs">3 Yr Below</td>
-                </tr>
-                <tr class="border-b border-slate-100 hover:bg-slate-50 transition-colors">
-                  <td class="py-1 px-1.5">Foundational</td>
-                  <td class="py-1 px-1.5 text-center font-bold text-slate-700">L1</td>
-                  <td class="py-1 px-1.5 text-red-600 text-xs">4 Yr Below</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-       </div>
+       
       </div>
      </div>
     </div>
@@ -1515,7 +1429,7 @@
 
     function showSegmentDetails(segment) {
       const titles = {
-        'high': '🌟 High Performers',
+        'high': '🌟 At Grade Level',
         'track': '📊 On Track',
         'support': '🆘 Needs Support'
       };
