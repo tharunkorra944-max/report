@@ -1,0 +1,11 @@
+{
+  "buildCommand": "echo 'Static site - no build needed'",
+  "cleanUrls": true,
+  "redirects": [],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/principal.html"
+    }
+  ]
+}

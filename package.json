@@ -1,0 +1,9 @@
+{
+  "name": "school-performance-report",
+  "version": "1.0.0",
+  "description": "School Performance Report for Principals",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  }
+}
